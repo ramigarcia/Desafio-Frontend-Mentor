@@ -1,0 +1,329 @@
+:root{
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --background: hsl(213, 44%, 95%);
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 750px;
+  font-size: 13px;
+  display: flex;
+  font-family: 'Manrope', sans-serif;
+}
+
+.container{
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  margin-top: 125px;
+  box-shadow: .3rem .3rem 1rem rgba(0, 0, 0, 0.37);
+  background: var(--background);
+}
+
+.card{
+  width: 650px;
+  height: 280px;
+  margin: auto;
+  margin-top: 115px;
+  border-radius: 5px;
+  box-shadow: .3rem .3rem 1rem rgba(0, 0, 0, 0.123);
+  background-color: hsl(60, 100%, 100%);
+}
+
+figure {
+  margin: 0;
+  width: 250px;
+  height: 150px;
+}
+
+.container-image img{
+  width: 250px;
+  height: 280px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-title{
+  margin-left: 265px;
+  margin-top: -128px;
+  margin-right: 15px;
+  color: var(--very-dark-grayish-blue);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card-description{
+  margin-top: 10px;
+  margin-left: 265px;
+  margin-right: 38px;
+  color: var(--desaturated-dark-blue);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.profile{
+  margin-top: 20px;
+  margin-left: 265px;
+  margin-right: 38px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container-image-profile{
+  height: 35px;
+  width: 35px;
+}
+
+.container-image-profile img{
+  border-radius: 50%;
+  object-fit: cover;
+  width : 50px; 
+  height : 50px;
+}
+
+.profile-title{
+  margin-left: 60px;
+  margin-top: -36px;
+  color: var(--very-dark-grayish-blue);
+}
+
+.date{
+  margin-left: 60px;
+  margin-top: -10px;
+  color: var(--grayish-blue);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.container-share{
+  background-color: var(--light-grayish-blue);
+  max-width: 100%;
+  height: 25px;
+  width: 25px;
+  float: right;
+  border-radius: 50%;
+  margin-top: -45px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container-share img{
+  margin: 4px auto;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 90px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 375px){
+  body{
+    display: flex;
+    background: var(--background);
+    height: 700px;
+  }
+
+  .container{
+    width: 450px;
+    height: 0;
+    box-shadow: 0;
+    margin-top: 55px;
+  }
+
+  .card{
+    width: 325px;
+    height: 590px;
+    max-height: 590px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: .3rem .3rem 1rem rgba(0, 0, 0, 0.123);
+    background-color: hsl(60, 100%, 100%);
+  }
+
+  figure {
+    margin: 0;
+  }
+  
+  .container-image img{
+    width: 325px;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+  
+  .card-title{
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+    font-size: 17px;
+    margin: 0 auto;
+    margin-top: 110px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .card-description{
+    color: var(--desaturated-dark-blue);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .profile{
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+  .container-image-profile img{
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-title{
+    margin-left: 60px;
+    margin-top: -30px;
+    color: var(--very-dark-grayish-blue);
+  }
+  
+  .date{
+    margin-left: 60px;
+    margin-top: -10px;
+    color: var(--grayish-blue);
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .container-share{
+    background-color: var(--light-grayish-blue);
+    max-width: 100%;
+    height: 25px;
+    width: 25px;
+    float: right;
+    border-radius: 50%;
+    margin-top: -45px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .container-share img{
+    margin: 4px auto;
+  }
+
+  .attribution{
+    margin-top: -15px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  body{
+    display: flex;
+    background: var(--background);
+    height: 700px;
+  }
+
+  .container{
+    height: 0;
+    box-shadow: 0;
+    margin-top: 55px;
+  }
+
+  .card{
+    width: 305px;
+    height: 590px;
+    max-height: 590px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: .3rem .3rem 1rem rgba(0, 0, 0, 0.123);
+    background-color: hsl(60, 100%, 100%);
+  }
+
+  figure {
+    margin: 0;
+  }
+  
+  .container-image img{
+    width: 305px;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+  
+  .card-title{
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+    font-size: 17px;
+    margin: 0 auto;
+    margin-top: 110px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .card-description{
+    color: var(--desaturated-dark-blue);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .profile{
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+  .container-image-profile img{
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-title{
+    margin-left: 60px;
+    margin-top: -30px;
+    color: var(--very-dark-grayish-blue);
+  }
+  
+  .date{
+    margin-left: 60px;
+    margin-top: -10px;
+    color: var(--grayish-blue);
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .container-share{
+    background-color: var(--light-grayish-blue);
+    max-width: 100%;
+    height: 25px;
+    width: 25px;
+    float: right;
+    border-radius: 50%;
+    margin-top: -45px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .container-share img{
+    margin: 4px auto;
+  }
+
+  .attribution{
+    margin-top: -15px;
+  }
+}
